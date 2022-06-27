@@ -29,10 +29,11 @@ Route::get('/bolo/{sabor}', function ($sabor) {
     switch($sabor){
         case 'laranja': return view('laranja'); break;
         case 'morango': return view('morango'); break;
+        default: return view('not_found'); break;
     }
 });
 
-Route::get('/bolo/', function () {
+Route::get('/bolo', function () {
     return view('listar_sabores');
 });
     

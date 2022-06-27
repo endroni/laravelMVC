@@ -4,6 +4,10 @@ header{
   	color: gold;
   	background: #222;
 }
+
+header a{
+	color: gold;
+}
   
 #conteudo{
   	margin: 10px 0;

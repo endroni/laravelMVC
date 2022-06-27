@@ -15,7 +15,7 @@
     @endif 
 
     <li>
-        <a href="{{ url('/') }}/bolo/{{ $sabor }}">
+        <a href="{{ url('/') }}/bolo/{{ $sabor }}" style="color: {{$cor}}">
             {{ ucfirst($sabor) }}        <!-- sabor -->
             ({{ $loop->iteration }})     <!-- item iteração -->
 
