@@ -15,11 +15,13 @@ Para esse projeto iremos utilizar o framework Laravel para organizar nossa aplic
 
 ### Ferramentas necessárias: 
 
-* PHP
+* [PHP](https://www.php.net/) 
 
-* SQLite3
 
-* Composer
+* [SQLite3](https://www.sqlite.org/)
 
-* Visual Studio Code
+* [Composer](https://getcomposer.org/)
 
+* [Visual Studio Code](https://code.visualstudio.com/)
+
+Acesse os blocos e siga as instruções do README para utilizar  esse conteúdo. 
