@@ -7,58 +7,71 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# LARAVEL COM MVC
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Aqui você encontrará um passo a passo para a criação de um sistema de receitas. 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Para esse projeto iremos utilizar o framework Laravel para organizar nossa aplicação dentro dos padrões MVC.
 
-## Learning Laravel
+### Ferramentas necessárias: 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* [PHP](https://www.php.net/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* [SQLite3](https://www.sqlite.org/)
 
-## Laravel Sponsors
+* [Composer](https://getcomposer.org/)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-### Premium Partners
+Esses são os procedimentos para concluir o bloco 02.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+------
 
-## Contributing
+## Rotas no Laravel 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 1º passo - clone o repositório
 
-## Code of Conduct
+### 2º passo - copie o conteúdo do bloco1 em um local para testes
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3º passo - dentro do diretório bloco1 execute o comando: 
 
-## Security Vulnerabilities
+`composer install`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 4º passo - inicie o serviço com o comando: 
 
-## License
+`php artisan serve`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Definição
+
+"Rotas no Laravel nada mais é do que a forma que o framework utiliza para reconhecer as URL's chamadas e definir o que será exibido para o usuário." 
+De maneira prática é o que você digita depois da barra / no endereço da URL.
+
+### Exemplo:
+
+Acesse o arquivo `routes/web.php`
+
+Adicione ao código o seguinte código: 
+
+`Route::get('/bao', function(){`
+
+  `return "<p>Tudo <strong>bão!</strong></p>";`
+
+`});`
+
+Agora acrescente `/bao` ao seu endereço URL. Exemplo: http://127.0.0.1:8000/bao
+
+
+
+Observe que: 
+
+:: para acessar métodos da classe
+get é o verbo de acesso via URL.
+sintaxe: 
+    Route::método('endereço url iniciada com /', função retornando o que você deseja passar);
+o método get recebe dois parâmetros, endereço da URL e  a função que eu quero retornar
+
+
+
