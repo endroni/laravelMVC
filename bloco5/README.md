@@ -62,7 +62,15 @@ Ao dar um pull para o github, o diretório vendor é ignorado. Portanto, vamos r
 
 `database.sqlite`
 
-Obs. Esse arquivo será nossa base de dados. 
+### ou então digite o comando abaixo para criar a migrate automaticamente:
+`php artisan migrate`
+
+#### Obs. 
+* Não se esqueça de descomentar a linha que trata do SQLite no arquivo php.ini
+`extension=sqlite3`
+
+* Esse arquivo será nossa base de dados. 
+
 
 ### 5º passo - altere as seguintes linhas no arquivo .env
 
